@@ -1,0 +1,110 @@
+//Get one by id
+query{
+  getPropertyById(id: 2) {
+    city
+    state
+    zipCode
+    id
+  }
+}
+
+//Get all with some props
+query{
+  getAllProperties {
+    id
+    city
+    state
+    zipCode
+    weatherData {
+      current {
+        observation_time
+        temperature
+        weather_code
+        weather_icons
+        weather_descriptions
+        wind_speed
+        wind_degree
+        wind_dir
+        pressure
+        precip
+        humidity
+        cloudcover
+        feelslike
+        uv_index
+        visibility
+    }
+    } 
+    location{
+        lat
+        lon
+      }
+  }
+}
+
+//Get one with all props
+query($getPropertyByIdId: Int!){
+  getPropertyById(id: $getPropertyByIdId)
+   {
+    id
+    city
+    state
+    zipCode
+    weatherData {
+      current {
+        observation_time
+        temperature
+        weather_code
+        weather_icons
+        weather_descriptions
+        wind_speed
+        wind_degree
+        wind_dir
+        pressure
+        precip
+        humidity
+        cloudcover
+        feelslike
+        uv_index
+        visibility
+    }
+    } 
+    location{
+        lat
+        lon
+      }
+  }
+}
+
+//Query for filtering
+query {
+    getAllProperties(city: "New York", state: "NY") {
+        id
+        city
+        state
+        zipCode
+        street {
+            propertyStreet
+            propertyNumber
+        }
+    }
+}
+
+//Query for sorting
+query {
+    getAllProperties(sortBy: "createdAt", order: "a") {
+        id
+        city
+        state
+        createdAt
+    }
+}
+
+//Query for filtering and sorting
+query {
+    getAllProperties(city: "New York", sortBy: "createdAt") {
+        id
+        city
+        state
+        createdAt
+    }
+}

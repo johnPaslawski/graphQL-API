@@ -1,0 +1,22 @@
+
+//Add new property
+
+mutation {
+    addProperty(input: {
+        city: "New York",
+        street: {
+            propertyStreet: "5th Avenue",
+            propertyNumber: "101"
+        },
+        state: "NY",
+        zipCode: "10001",
+    }) {
+        id
+        city
+        state
+    }
+}
+
+
+//
+
