@@ -41,7 +41,6 @@ export const PropertyWeatherDataType = new GraphQLObjectType({
     name: 'PropertyWeatherData',
     fields: {
         current: { type: WeatherCurrentType },
-        // location: { type: LocationType },
     },
 });
 

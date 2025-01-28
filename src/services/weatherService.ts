@@ -1,4 +1,4 @@
-import { WeatherCurrent } from "../models/property.types";
+import { WeatherCurrent } from "../models/PropertyModelTypes";
 import axios from "axios";
 import dotenv from 'dotenv';
 import initMessages from "../consoleMessages/initMessages";

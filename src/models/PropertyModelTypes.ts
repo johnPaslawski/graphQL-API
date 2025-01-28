@@ -16,7 +16,6 @@ export type PropertyStreet = {
 
 export type PropertyWeatherData = {
     current: WeatherCurrent;
-    // location: Location;
 };
 
 export type WeatherCurrent = {

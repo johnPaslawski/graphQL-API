@@ -1,7 +1,7 @@
 import { Op, Order } from "sequelize";
-import PropertyDbModel from "../../../models/property.db.model";
-import { IPropertyRepository } from "../interfaces/property.repository.interface";
-import { Property } from "../../../models/property.types";
+import PropertyDbModel from "../../../models/PropertyDbModel";
+import { IPropertyRepository } from "../interfaces/IPropertyRepository";
+import { Property } from "../../../models/PropertyModelTypes";
 
 export class SQLitePropertyRepository implements IPropertyRepository
 {

@@ -3,7 +3,7 @@ import { PropertyType } from './types/PropertyType';
 import { PropertyInputType } from './types/InputTypes';
 import { MutationResolvers } from './resolvers/MutationResolvers';
 import { QueryResolvers } from './resolvers/QueryResolvers';
-import { SQLitePropertyRepository } from '../infrastructure/repositories/implementations/sqlite.property.repository';
+import { SQLitePropertyRepository } from '../infrastructure/repositories/implementations/SQLitePropertyRepository';
 
 const propertyRepository = new SQLitePropertyRepository();
 const queryResolvers = QueryResolvers(propertyRepository);

@@ -1,4 +1,4 @@
-import { Property } from "../../../models/property.types";
+import { Property } from "../../../models/PropertyModelTypes";
 
 export interface IPropertyRepository {
     getAllProperties(args: {

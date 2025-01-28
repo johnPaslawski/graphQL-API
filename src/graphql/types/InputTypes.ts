@@ -41,7 +41,6 @@ export const PropertyWeatherDataInputType = new GraphQLInputObjectType({
     name: 'PropertyWeatherDataInput',
     fields: {
         current: { type: WeatherCurrentInputType },
-        // location: { type: LocationInputType },
     },
 });
 

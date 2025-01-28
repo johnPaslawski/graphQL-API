@@ -1,5 +1,5 @@
-import PropertyDbModel from "../../models/property.db.model";
-import { Property } from "../../models/property.types";
+import PropertyDbModel from "../../models/PropertyDbModel";
+import { Property } from "../../models/PropertyModelTypes";
 import { getWeatherData } from "../../services/weatherService";
 
 export const MutationResolvers = {

@@ -1,4 +1,3 @@
-import process from "node:process";
 import { Sequelize } from "sequelize";
 
 const sequelize = new Sequelize({
