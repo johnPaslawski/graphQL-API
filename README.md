@@ -74,3 +74,5 @@ You can interact with the GraphQL API via the Apollo Sandbox:
 
 ### URL: http://localhost:3001/graphql
 ### Example Queries are in exampleQueries.txt and exampleMutations.txt files
+
+# mail: jpaslawski93@gmail.com
