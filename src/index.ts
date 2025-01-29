@@ -14,6 +14,7 @@ const PORT = process.env.PORT || 3001;
     app.listen(PORT, () => {
         console.log(initMessages.expressReady);
         console.log(initMessages.serverRunning(PORT));
+        console.log(initMessages.sandboxRunning(PORT));
         console.log(initMessages.readyToRoll);
     });
 })();

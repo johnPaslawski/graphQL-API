@@ -2,11 +2,12 @@ import { WeatherCurrent } from "../models/PropertyModelTypes";
 import axios from "axios";
 import dotenv from 'dotenv';
 import initMessages from "../consoleMessages/initMessages";
+import { config } from "../infrastructure/config/config";
 
 dotenv.config();
 console.log(initMessages.apiKeyReady);
 
-const BASE_URL = 'https://api.weatherstack.com/current';
+const BASE_URL = config.BASE_URL;
 const ACCESS_KEY = process.env.WEATHERSTACK_API_KEY || '';
 
 export const getWeatherData = async (location: string) => {

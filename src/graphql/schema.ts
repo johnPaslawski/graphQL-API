@@ -17,8 +17,8 @@ const RootQueryType = new GraphQLObjectType({
                 city: {type: GraphQLString},
                 zipCode: {type: GraphQLString},
                 state: {type: GraphQLString},
-                sortBy: {type: GraphQLString},
-                order: {type: GraphQLString}
+                sortBy: {type: GraphQLString, description: "supported field: 'createdAt'"},
+                order: {type: GraphQLString, description: "descending: null or empty string | ascending: 'a'"}
             },
             resolve: queryResolvers.getAllProperties
         },

@@ -42,8 +42,8 @@ query{
 }
 
 //Get one with all props
-query($getPropertyByIdId: Int!){
-  getPropertyById(id: $getPropertyByIdId)
+query{
+  getPropertyById(id: 6)
    {
     id
     city
