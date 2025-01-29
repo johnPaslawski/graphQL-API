@@ -2,7 +2,7 @@ import { WeatherCurrent } from "../models/PropertyModelTypes";
 import axios from "axios";
 import dotenv from 'dotenv';
 import initMessages from "../consoleMessages/initMessages";
-import { config } from "../infrastructure/config/config";
+import { config } from "../config";
 
 dotenv.config();
 console.log(initMessages.apiKeyReady);
